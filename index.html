@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="description" content="Udacity Responsive Images course project" />
+  <meta name="author" content="//samdutton.com">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta charset="utf-8">
+  <meta itemprop="name" content="Udacity Responsive Images course project">
+  <meta itemprop="image" content="images/icon.png">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta id="theme-color" name="theme-color" content="#307699">
+
+  <base target="_blank">
+
+  <title>grunt responsive images</title>
+
+  <link rel="icon" sizes="192x192" href="images/icon.png">
+  <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial" />
+
+  <!-- loads the Udacity Feedback extension -->
+  <meta name="udacity-grader" content="http://udacity.github.io/responsive-images/project/project-grader.json" unit-tests="http://udacity.github.io/responsive-images/project/project-grader.js">
+
+</head>
+
+<body>
+  <header>
+    <a href="//github.com/udacity/responsive-images/" title="Home page for course examples">
+      <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <title>My Blog</title>
+        <path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm0-10c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"></path>
+      </svg>
+    </a>
+  </header>
+
+  <article>
+
+    <h1>San Fransisco Places</h1>
+
+    <picture id="banner">
+      <source media="(min-width: 750px)" srcset="images/golden_bridge-1600_large_2x.jpg 2x, images/golden_bridge-800_large_1x.jpg" />
+      <source media="(min-width: 500px)" srcset="images/golden_bridge-500_medium.jpg" />
+      <img src="images/golden_bridge-250_small.jpg" alt="golden bridge">
+    </picture>
+
+    <section id="post">
+
+      <h2>Popular Places in San Fransisco</h2>
+
+      <p class="lead">San Francisco, in northern California, is a city on the tip of a peninsula surrounded by the Pacific Ocean and San Francisco Bay. It's known for its hilly landscape, year-round fog, iconic Golden Gate Bridge, cable cars and colorful Victorian houses. The Financial District's Transamerica Pyramid is its most distinctive skyscraper. In the bay sits Alcatraz Island, site of the notorious former prison.</p>
+
+      <figure>
+        <picture>
+          <source media="(min-width: 750px)" srcset="images/house-1600_large_2x.jpg 2x, images/house-800_large_1x.jpg" />
+      <source media="(min-width: 500px)" srcset="images/house-500_medium.jpg" />
+      <img src="images/house-250_small.jpg" alt="san fransisco houses">
+        </picture>
+        <figcaption>San Fransisco Houses</figcaption>
+      </figure>
+
+      <p>San Francisco, in northern California, is a city on the tip of a peninsula surrounded by the Pacific Ocean and San Francisco Bay. It's known for its hilly landscape, year-round fog, iconic Golden Gate Bridge, cable cars and colorful Victorian houses. The Financial District's Transamerica Pyramid is its most distinctive skyscraper. In the bay sits Alcatraz Island, site of the notorious former prison.</p>
+
+      <p>San Francisco, in northern California, is a city on the tip of a peninsula surrounded by the Pacific Ocean and San Francisco Bay. It's known for its hilly landscape, year-round fog, iconic Golden Gate Bridge, cable cars and colorful Victorian houses. The Financial District's Transamerica Pyramid is its most distinctive skyscraper. In the bay sits Alcatraz Island, site of the notorious former prison.</p>
+
+      <figure>
+        <picture>
+          <source media="(min-width: 750px)" srcset="images/Fisherman-1600_large_2x.jpg 2x, images/Fisherman-800_large_1x.jpg" />
+      <source media="(min-width: 500px)" srcset="images/Fisherman-500_medium.jpg" />
+      <img src="images/Fisherman-250_small.jpg" alt="fishmanwharf">
+        </picture>
+        <figcaption>Fisherman wharf in San Fransisco</figcaption>
+      </figure>
+
+      <p>San Francisco, in northern California, is a city on the tip of a peninsula surrounded by the Pacific Ocean and San Francisco Bay. It's known for its hilly landscape, year-round fog, iconic Golden Gate Bridge, cable cars and colorful Victorian houses. The Financial District's Transamerica Pyramid is its most distinctive skyscraper. In the bay sits Alcatraz Island, site of the notorious former prison..</p>
+
+    </section>
+  </article>
+</body>
+</html>
