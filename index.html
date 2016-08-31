@@ -1,81 +1,120 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html  lang="en">
+    <head>
+        <!-- unicode characters -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <!-- viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Anum Portfolio">
+        <meta name="author" content="Anum Sharma">
+        <title>Anum Portfolio</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- my own css file -->
+        <link rel="stylesheet" href="css/main.css">
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+        <!-- Icon Fonts -->
+        <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial" />
 
-  <meta name="description" content="Udacity Responsive Images course project" />
-  <meta name="author" content="//samdutton.com">
-  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
-  <meta charset="utf-8">
-  <meta itemprop="name" content="Udacity Responsive Images course project">
-  <meta itemprop="image" content="images/icon.png">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta id="theme-color" name="theme-color" content="#307699">
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"> </script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"> </script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="row">
+                    <div class="col-md-2 box">
+                        <img class="img-responsive" src="udacity-logo.png" alt="udacity logo">
+                    </div> <!-- col-md-2 close -->
+                    <div class="col-md-10  box text-right  text-uppercase ">
+                        <h1 class="text-primary">Anum Sharma</h1>
+                        <h4 class="text-primary">Full-Stack Novice</h4>
+                    </div> <!-- col-md-10 close -->
+                </div>
+                </header><!--row close-->
+                <div class="row">
+                    <div class="col-md-12 navbar">
+                        <nav class="navbar navbar-inverse">
+                            <div class="container-fluid">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+                                        <span class="icon-bar"></span><!-- Hamburger Menu -->
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                                <div class="collapse navbar-collapse" id="navigation">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="#1">Resume</a></li>
+                                    <li><a href="#2">Movie Trailer</a></li>
+                                    <li><a href="#3">Tournament</a></li>
+                                    <li><a href="#4">Neighborhood Map</a></li>
+                                    <li><a href="#5">Configration</a></li>
+                                </ul>
+                                </div><!--collapse navbar-collapse-->
+                            </div>
+                        </nav> <!-- navbar-default close -->
+                    </div> <!-- col-md-12 -->
+                </div><!--row close-->
+        <main>
+            <!--  main content of a document -->
+            <div class="row">
+                    <div class="col-md-12">
+                        <hr>
+                    </div> <!-- col-md-12 close -->
+            </div> <!-- row close -->
+            <div class="row">
+                    <div class="col-md-12">
+                        <figure>
+                                <picture>
+                                    <source media="(min-width: 750x)" class="center-block"srcset="dest/technology-1200_large_2x.jpg 2x, dest/technology-800_large_1x.jpg 1x" />
+                                    <source media="(max-width: 749px)" class="center-block"srcset="dest/technology-600_medium.jpg" />
+                                    <img class="img-responsive middle-img" class="center-block" src="dest/technology-1200_large_2x.jpg"  alt="technology image">
+                                </picture>
+                            <figcaption> Humanity is acquiring all the right technology for all the wrong reasons  </figcaption>
+                        </figure>
+                     </div><!-- col-md-12 close-->
+            </div><!--row-->
+                <section>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="text-muted text-capitalize">featured work</h2>
+                        </div> <!-- col-md-12 close -->
+                    </div><!--row close -->
+                </section>
+                 <section>
+                <div class="row text-center">
 
-  <base target="_blank">
-
-  <title>grunt responsive images</title>
-
-  <link rel="icon" sizes="192x192" href="images/icon.png">
-  <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial" />
-
-  <!-- loads the Udacity Feedback extension -->
-  <meta name="udacity-grader" content="http://udacity.github.io/responsive-images/project/project-grader.json" unit-tests="http://udacity.github.io/responsive-images/project/project-grader.js">
-
-</head>
-
-<body>
-  <header>
-    <a href="//github.com/udacity/responsive-images/" title="Home page for course examples">
-      <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <title>My Blog</title>
-        <path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm0-10c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"></path>
-      </svg>
-    </a>
-  </header>
-
-  <article>
-
-    <h1>San Fransisco Places</h1>
-
-    <picture id="banner">
-      <source media="(min-width: 750px)" srcset="images/golden_bridge-1600_large_2x.jpg 2x, images/golden_bridge-800_large_1x.jpg" />
-      <source media="(min-width: 500px)" srcset="images/golden_bridge-500_medium.jpg" />
-      <img src="images/golden_bridge-250_small.jpg" alt="golden bridge">
-    </picture>
-
-    <section id="post">
-
-      <h2>Popular Places in San Fransisco</h2>
-
-      <p class="lead">San Francisco, in northern California, is a city on the tip of a peninsula surrounded by the Pacific Ocean and San Francisco Bay. It's known for its hilly landscape, year-round fog, iconic Golden Gate Bridge, cable cars and colorful Victorian houses. The Financial District's Transamerica Pyramid is its most distinctive skyscraper. In the bay sits Alcatraz Island, site of the notorious former prison.</p>
-
-      <figure>
-        <picture>
-          <source media="(min-width: 750px)" srcset="images/house-1600_large_2x.jpg 2x, images/house-800_large_1x.jpg" />
-      <source media="(min-width: 500px)" srcset="images/house-500_medium.jpg" />
-      <img src="images/house-250_small.jpg" alt="san fransisco houses">
-        </picture>
-        <figcaption>San Fransisco Houses</figcaption>
-      </figure>
-
-      <p>San Francisco, in northern California, is a city on the tip of a peninsula surrounded by the Pacific Ocean and San Francisco Bay. It's known for its hilly landscape, year-round fog, iconic Golden Gate Bridge, cable cars and colorful Victorian houses. The Financial District's Transamerica Pyramid is its most distinctive skyscraper. In the bay sits Alcatraz Island, site of the notorious former prison.</p>
-
-      <p>San Francisco, in northern California, is a city on the tip of a peninsula surrounded by the Pacific Ocean and San Francisco Bay. It's known for its hilly landscape, year-round fog, iconic Golden Gate Bridge, cable cars and colorful Victorian houses. The Financial District's Transamerica Pyramid is its most distinctive skyscraper. In the bay sits Alcatraz Island, site of the notorious former prison.</p>
-
-      <figure>
-        <picture>
-          <source media="(min-width: 750px)" srcset="images/Fisherman-1600_large_2x.jpg 2x, images/Fisherman-800_large_1x.jpg" />
-      <source media="(min-width: 500px)" srcset="images/Fisherman-500_medium.jpg" />
-      <img src="images/Fisherman-250_small.jpg" alt="fishmanwharf">
-        </picture>
-        <figcaption>Fisherman wharf in San Fransisco</figcaption>
-      </figure>
-
-      <p>San Francisco, in northern California, is a city on the tip of a peninsula surrounded by the Pacific Ocean and San Francisco Bay. It's known for its hilly landscape, year-round fog, iconic Golden Gate Bridge, cable cars and colorful Victorian houses. The Financial District's Transamerica Pyramid is its most distinctive skyscraper. In the bay sits Alcatraz Island, site of the notorious former prison..</p>
-
-    </section>
-  </article>
-</body>
+                    <div class="col-md-4">
+                        <figure>
+        <img class="img-responsive" src="img/art.jpg" alt="Art" >
+        <figcaption>Art is the daughter of freedom </figcaption>
+                        </figure>
+        <h3 class="text-danger text-uppercase ">Art</h3>
+        <a href="#">link</a>
+    </div>
+    <div class="col-md-4">
+        <figure>
+        <img class="img-responsive" src="img/rainbow.jpg" alt="Rainbow">
+        <figcaption>Try to be rainbow in someone's cloud </figcaption>
+                        </figure>
+        <h3 class="text-danger text-uppercase ">Rainbow</h3>
+        <a href="#">Link</a>
+    </div>
+    <div class="col-md-4">
+        <figure>
+        <img class="img-responsive" src="img/dance.jpg" alt="Dance">
+        <figcaption>Dance is the hidden langauge of the soul </figcaption>
+                        </figure>
+        <h3 class="text-danger text-uppercase ">Dance</h3>
+        <a href="#">Link</a>
+    </div>
+                </div><!--row-->
+            </section>
+        </main>
+        </div>
+    </body>
 </html>
