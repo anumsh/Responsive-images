@@ -1,5 +1,5 @@
 [class*="zocial-"]:before {
-  color: gray;
+  color: blue;
   display: inline-block;
   font-family: 'zocial', sans-serif;
   text-shadow: 3px 3px 3px #aaa;
@@ -7,7 +7,7 @@
 }
 
 a:hover [class*="zocial-"]:before {
-  color: #2a5d8a;
+  color: #5191cc;
 }
 
 div#social a {
@@ -18,29 +18,26 @@ div#social a:last-of-type {
   margin: 0;
 }
 
-* {
+/** {
    outline: 1px solid red;
-}
+} */
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
 }
-
-body {
-    color:#747704;
-    margin:1em;
-    bottom: 1px solid red;
+.container {
+    margin-top: 1em;
 }
 
-header {
-     margin-top: 30px;
+.navbar {
+margin:0.1em 0 0.1em 0;
 }
 
 hr {
-        height: 2px;
-        background-color: #bcbbbb;
+        margin-top: 0.7em;
+        border-top: 0.4em solid #bcbbbb;
  }
  .middle-img {
     width:1200px;
@@ -48,7 +45,14 @@ hr {
 }
 
 h1 {
-    font-size: 60px;
+    font-weight: lighter;
+    margin-bottom: 5px;
+    font-size: 3em;
+}
+h3 {
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-top: 0.5em;
 }
 
 h4 {
@@ -63,61 +67,46 @@ h2 {
     font-weight: 200;
     font-size: 35px;
 }
-.navbar {
-margin: 0;
+a {
+  color: #4142c4;
+  font-weight: 300;
 }
+
+a:hover {
+  color:#5191cc;
+  text-decoration: underline;
+}
+
 .row {
     display:flex;
 }
 .box {
     width:100%;
 }
-@media screen and (min-width: 550px) {
-    .col-md-2 {
-        width: 33.33%;
-    }
-    .col-md-10 {
-        width: 58.33%%;
-    }
+
+.items {
+  margin-bottom: 1em;
 }
-@media screen and (max-width: 549px) {
-    .col-md-2 {
-        width: 33.33%;
-    }
-    .col-md-10 {
-        width: 58.33%%;
-    }
- h1  {
-    font-size: 15px;
-            }
-h4 {
-    font-size: 10px;
-}
-}
-@media screen and (max-width:250px) {
-    .col-md-2 {
-        width: 50%;
-    }
-    .col-md-10 {
-        width: 50%;
-    }
-    h1{
-    font-size: 10px;
-    font-weight: bold;
-            }
-h4 {
-    font-size: 5px;
-    font-weight: bold;
+.images {
+  border-bottom: 0.1em solid #bcbbbb;
 }
 
-.text-center {
-    {display:block;
-    margin-right:auto;
-    margin-left:auto;
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    h3 {
+        min-height: 2.3em;
+    }
 }
 
-.footer {
-    background:gray;
-    margin:1em;
-    padding:10px;
+@media screen and (max-width: 550px) {
+    .logo {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+footer {
+    height: 30px;
+    margin-top: 1em;
 }
